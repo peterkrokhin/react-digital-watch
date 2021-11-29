@@ -1,0 +1,75 @@
+.digit {
+    width: 18vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+.digit .vertical_area {
+    height: 12vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.digit .vertical_area .vertical_line {
+    width: 2vmin;
+    height: 11vmin;
+    background-color: green;
+    position: relative;
+}
+
+.digit .vertical_area .vertical_line::before {
+    content: "";
+    position: absolute;
+    top: -1vmin;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-bottom-color: steelblue;
+    border-top: 0;
+}
+
+.digit .vertical_area .vertical_line::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-top-color: steelblue;
+    border-bottom: 0;
+}
+
+.digit .horizontal_area {
+    height: 2vmin;
+    display: flex;
+    justify-content: center;
+}
+
+.digit .horizontal_area .horizontal_line {
+    width: 13vmin;
+    background-color: green;
+    position: relative;
+}
+
+.digit .horizontal_area .horizontal_line::before {
+    content: "";
+    position: absolute;
+    left: -1vmin;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-right-color: steelblue;
+    border-left: 0;
+}
+
+.digit .horizontal_area .horizontal_line::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-left-color: steelblue;
+    border-right: 0;
+}
