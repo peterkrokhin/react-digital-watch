@@ -11,32 +11,32 @@
     align-items: center
 }
 
-.digit .vertical_area .vertical_line {
+.digit .vertical_area .vertical_line_on {
     width: 2vmin;
     height: 11vmin;
     background-color: green;
     position: relative;
 }
 
-.digit .vertical_area .vertical_line::before {
+.digit .vertical_area .vertical_line_on::before {
     content: "";
     position: absolute;
     top: -1vmin;
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-bottom-color: steelblue;
+    border-bottom-color: green;
     border-top: 0;
 }
 
-.digit .vertical_area .vertical_line::after {
+.digit .vertical_area .vertical_line_on::after {
     content: "";
     position: absolute;
     top: 100%;
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-top-color: steelblue;
+    border-top-color: green;
     border-bottom: 0;
 }
 
@@ -46,30 +46,87 @@
     justify-content: center;
 }
 
-.digit .horizontal_area .horizontal_line {
+.digit .horizontal_area .horizontal_line_on {
     width: 13vmin;
     background-color: green;
     position: relative;
 }
 
-.digit .horizontal_area .horizontal_line::before {
+.digit .horizontal_area .horizontal_line_on::before {
     content: "";
     position: absolute;
     left: -1vmin;
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-right-color: steelblue;
+    border-right-color: green;
     border-left: 0;
 }
 
-.digit .horizontal_area .horizontal_line::after {
+.digit .horizontal_area .horizontal_line_on::after {
     content: "";
     position: absolute;
     left: 100%;
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-left-color: steelblue;
+    border-left-color: green;
+    border-right: 0;
+}
+
+.digit .vertical_area .vertical_line_off {
+    width: 2vmin;
+    height: 11vmin;
+    background-color: lightgreen;
+    position: relative;
+}
+
+.digit .vertical_area .vertical_line_off::before {
+    content: "";
+    position: absolute;
+    top: -1vmin;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-bottom-color: lightgreen;
+    border-top: 0;
+}
+
+.digit .vertical_area .vertical_line_off::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-top-color: lightgreen;
+    border-bottom: 0;
+}
+
+.digit .horizontal_area .horizontal_line_off {
+    width: 13vmin;
+    background-color: lightgreen;
+    position: relative;
+}
+
+.digit .horizontal_area .horizontal_line_off::before {
+    content: "";
+    position: absolute;
+    left: -1vmin;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-right-color: lightgreen;
+    border-left: 0;
+}
+
+.digit .horizontal_area .horizontal_line_off::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border: 1vmin solid transparent;
+    border-left-color: lightgreen;
     border-right: 0;
 }
