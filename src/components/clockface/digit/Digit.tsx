@@ -12,7 +12,6 @@ const numberToDigitMapper: Map<number, boolean[]> = new Map([
     [8, [true, true, true, true, true, true, true]],
     [9, [true, true, true, true, false, true, true]],
 ]);
-
 const defaultDigitElements = [true, true, true, true, true, true, true];
 
 interface DigitProps {
@@ -23,7 +22,7 @@ export const Digit = ({ number }: DigitProps) => {
     const digitsElements = numberToDigitMapper.get(number) || defaultDigitElements;
     const lineClasses = digitsElements.map(d => 
         d ? styles.line_on : styles.line_off);
-    console.log(lineClasses);
+
     return (
         <div>
         <div className={styles.digit}>
