@@ -1,0 +1,17 @@
+.points {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.points .point.on {
+    background-color: green;
+    width: 2vmin;
+    height: 2vmin;
+}
+
+.points .point.off {
+    background-color: lightgray;
+    width: 2vmin;
+    height: 2vmin;
+}
