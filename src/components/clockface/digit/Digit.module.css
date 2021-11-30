@@ -14,7 +14,7 @@
 .digit .vertical_area .vertical_line.line_on {
     width: 2vmin;
     height: 11vmin;
-    background-color: green;
+    background-color: darkgreen;
     position: relative;
 }
 
@@ -25,7 +25,7 @@
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-bottom-color: green;
+    border-bottom-color: darkgreen;
     border-top: 0;
 }
 
@@ -36,7 +36,7 @@
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-top-color: green;
+    border-top-color: darkgreen;
     border-bottom: 0;
 }
 
@@ -48,7 +48,7 @@
 
 .digit .horizontal_area .horizontal_line.line_on {
     width: 13vmin;
-    background-color: green;
+    background-color: darkgreen;
     position: relative;
 }
 
@@ -59,7 +59,7 @@
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-right-color: green;
+    border-right-color: darkgreen;
     border-left: 0;
 }
 
@@ -70,7 +70,7 @@
     width: 0;
     height: 0;
     border: 1vmin solid transparent;
-    border-left-color: green;
+    border-left-color: darkgreen;
     border-right: 0;
 }
 
