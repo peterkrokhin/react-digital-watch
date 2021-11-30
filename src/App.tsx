@@ -29,10 +29,11 @@ export const App = () => {
     const [clockTime, setClockTime] = useState(getClockTime());
     
     useEffect(() => {
-        setInterval(() => {
+        const interval = setInterval(() => {
             setClockTime(getClockTime());         
         }, 1000);
-    });
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <div className="App">
