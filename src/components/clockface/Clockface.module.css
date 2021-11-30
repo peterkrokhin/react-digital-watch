@@ -1,0 +1,6 @@
+#clockface {
+    width: 90vmin;
+    height: 30vmin;
+    display: flex;
+    justify-content: space-between;
+}
