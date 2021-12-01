@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Clockface } from './components/clockface/Clockface';
+import styles from './App.module.css';
 
 const getFirstAndSecondDigits = (number: number) => {
     const firstDigit = Math.trunc(number / 10);
@@ -36,7 +37,7 @@ export const App = () => {
     }, []);
 
     return (
-        <div className="App">
+        <div className={styles.clockface_container}>
             <Clockface clockTime={clockTime}/>
         </div>
     );
