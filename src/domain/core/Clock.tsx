@@ -29,7 +29,6 @@ export class Clock {
 
     public setClockDigits() {
         this.clockDigits = this.getClockTime();
-        console.log(this.clockDigits);
     }
 
     private getClockTime(): IClockDigits {
