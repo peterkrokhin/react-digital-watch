@@ -3,12 +3,16 @@ import { Digit } from './digit/Digit';
 import { Points } from './points/Points';
 import styles from './Clockface.module.css';
 import { Clock } from './../../domain';
+import { useEffect } from 'react';
 
-interface IClockfaceProps {
-    clock: Clock
-}
+let clock = new Clock();
 
-export const Clockface = observer(({ clock }: IClockfaceProps) => {
+export const Clockface = observer(() => {
+    useEffect(() => {
+        clock.start();
+        return () => clock.stop();
+    }, []);
+
     const digits = clock.clockDigits;
     return(
         <div id={styles.clockface}>
