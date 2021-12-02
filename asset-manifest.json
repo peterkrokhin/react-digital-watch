@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-digital-watch/static/css/main.6e39661d.chunk.css",
+    "main.js": "/react-digital-watch/static/js/main.8fe005e7.chunk.js",
+    "main.js.map": "/react-digital-watch/static/js/main.8fe005e7.chunk.js.map",
+    "runtime-main.js": "/react-digital-watch/static/js/runtime-main.2718ea6d.js",
+    "runtime-main.js.map": "/react-digital-watch/static/js/runtime-main.2718ea6d.js.map",
+    "static/js/2.3984a000.chunk.js": "/react-digital-watch/static/js/2.3984a000.chunk.js",
+    "static/js/2.3984a000.chunk.js.map": "/react-digital-watch/static/js/2.3984a000.chunk.js.map",
+    "static/js/3.4a13b11c.chunk.js": "/react-digital-watch/static/js/3.4a13b11c.chunk.js",
+    "static/js/3.4a13b11c.chunk.js.map": "/react-digital-watch/static/js/3.4a13b11c.chunk.js.map",
+    "index.html": "/react-digital-watch/index.html",
+    "static/css/main.6e39661d.chunk.css.map": "/react-digital-watch/static/css/main.6e39661d.chunk.css.map",
+    "static/js/2.3984a000.chunk.js.LICENSE.txt": "/react-digital-watch/static/js/2.3984a000.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2718ea6d.js",
+    "static/js/2.3984a000.chunk.js",
+    "static/css/main.6e39661d.chunk.css",
+    "static/js/main.8fe005e7.chunk.js"
+  ]
+}
