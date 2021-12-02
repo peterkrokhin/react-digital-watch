@@ -14,11 +14,11 @@ const numberToDigitMapper: Map<number, boolean[]> = new Map([
 ]);
 const defaultDigitElements = [true, true, true, true, true, true, true];
 
-interface DigitProps {
+interface IDigitProps {
     number: number;
 }
 
-export const Digit = ({ number }: DigitProps) => {
+export const Digit = ({ number }: IDigitProps) => {
     const digitsElements = numberToDigitMapper.get(number) || defaultDigitElements;
     const lineClasses = digitsElements.map(d => 
         d ? styles.line_on : styles.line_off);

@@ -4,11 +4,11 @@ import { Points } from './points/Points';
 import styles from './Clockface.module.css';
 import { Clock } from './../../domain/core/Clock';
 
-interface ClockfaceProps {
+interface IClockfaceProps {
     clock: Clock
 }
 
-export const Clockface = observer(({ clock }: ClockfaceProps) => {
+export const Clockface = observer(({ clock }: IClockfaceProps) => {
     const digits = clock.clockDigits;
     return(
         <div id={styles.clockface}>
