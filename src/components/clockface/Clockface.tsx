@@ -2,7 +2,7 @@ import { observer } from 'mobx-react'
 import { Digit } from './digit/Digit';
 import { Points } from './points/Points';
 import styles from './Clockface.module.css';
-import { Clock } from './../../domain/core/Clock';
+import { Clock } from './../../domain';
 
 interface IClockfaceProps {
     clock: Clock
